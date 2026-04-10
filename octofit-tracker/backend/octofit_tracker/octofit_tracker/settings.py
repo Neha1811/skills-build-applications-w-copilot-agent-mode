@@ -52,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# MongoDB (Djongo) Database Configuration
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -66,6 +65,9 @@ DATABASES = {
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['*']
 
 ROOT_URLCONF = 'octofit_tracker.urls'
 
